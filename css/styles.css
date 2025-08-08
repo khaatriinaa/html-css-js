@@ -1,0 +1,131 @@
+/* ========== BASE STYLES ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f5ff; 
+  color: #212529;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+h2 {
+  color: #8b5cf6;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+/* ========== NAVBAR ========== */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* ========== PORTFOLIO SECTION ========== */
+#portfolio {
+  padding: 60px 0;
+  background-color: #ede9fe;
+  transition: background-color 0.4s ease-in-out;
+}
+/* ========== CARDS ========== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.2); 
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #8b5cf6; 
+  transition: color 0.3s ease;
+}
+.card-title:hover {
+  color: #7c3aed; 
+}
+.transition {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* ========== BUTTONS ========== */
+.btn-outline-primary {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  border-color: #8b5cf6; 
+  color: #8b5cf6; 
+}
+.btn-outline-primary:hover {
+  background-color: #8b5cf6; 
+  border-color: #8b5cf6;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+}
+.btn-dark {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px 24px;
+}
+
+/* ========== CONTACT SECTION ========== */
+#contact {
+  background-color: #fefcff;
+  padding: 60px 0;
+}
+#contact .form-label {
+  font-weight: 600;
+  color: #495057;
+}
+#contact .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #d1c7e6;
+}
+#contact .form-control:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+}
+/* ========== MODALS ========== */
+.modal-content {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 15px 30px rgba(139, 92, 246, 0.15);
+  background-color: #ffffff;
+}
+.modal-title {
+  color: #8b5cf6; 
+  font-weight: 600;
+}
+/* ========== HERO SECTION ========== */
+.hero-section {
+  background: linear-gradient(135deg, #beb0df, #8b5cf6);
+}
+
+/* ========== NAVBAR CUSTOM ========== */
+.navbar-purple {
+  background: linear-gradient(135deg, #beb0df, #8b5cf6) !important;
+}
+
+.navbar-purple .nav-link,
+.navbar-purple .navbar-brand {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  font-size: 0.9rem;
+  background: linear-gradient(135deg, #beb0df, #8b5cf6) !important;
+}
