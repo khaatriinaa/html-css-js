@@ -37,3 +37,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+function handleSubmit() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill out all fields.");
+    return false; 
+  }
+
+  // Show popup message
+  alert("Your message is sent!");
+
+  // Clear the form (optional)
+  document.getElementById('name').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('message').value = "";
+
+  // Prevent actual form submission (page reload)
+  return false;
+}
