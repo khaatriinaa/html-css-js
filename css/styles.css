@@ -54,6 +54,26 @@ h2 {
 .card-title:hover {
   color: #7c3aed; 
 }
+
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body p {
+  flex-grow: 1; /* Push content above to take space */
+}
+
+.card-body .btn {
+  margin-top: auto; /* Keep button at bottom */
+}
+
 .transition {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
